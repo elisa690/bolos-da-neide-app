@@ -1,0 +1,231 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff7fb;
+    color: #5c3a42;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+}
+
+/* MENU DO TOPO */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px 40px;
+    background-color: #f8c8d8;
+}
+
+/* LOGO E NOME JUNTOS */
+.identidade {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.identidade img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.identidade h1 {
+    margin: 0;
+    color: #d66a8a;
+    font-size: 30px;
+}
+
+/* LINKS DO MENU */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #5c3a42;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: #d66a8a;
+}
+
+/* BANNER */
+header {
+    text-align: center;
+    padding: 25px 15px;
+}
+
+.banner {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    height: 300px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #d66a8a;
+    font-size: 40px;
+}
+
+h2 {
+    color: #d66a8a;
+    font-size: 28px;
+    margin-top: 30px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* LISTA */
+ul {
+    background-color: #ffffff;
+    padding: 25px 45px;
+    border-radius: 10px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imagens img {
+    width: 100%;
+    max-width: 300px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+#destaque img {
+    width: 45%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.personagens {
+    padding: 40px 0;
+}
+
+.personagens h2 {
+    color: #b52b73;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.grade-personagens {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 0 1 calc(33.333% - 25px);
+    min-width: 220px;
+    padding: 18px;
+    background-color: white;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(181, 43, 115, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+.card h3 {
+    color: #b52b73;
+    font-size: 21px;
+    margin: 15px 0 10px;
+}
+
+.card p {
+    color: #693957;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #e8a8c1;
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #f8c8d8;
+    color: #5c3a42;
+}
+
+
+footer {
+    background-color: #f8c8d8;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+/* TELAS PEQUENAS */
+@media (max-width: 700px) {
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .menu {
+        justify-content: center;
+    }
+
+    .banner {
+        height: 220px;
+    }
+
+    main {
+        padding: 15px;
+    }
+}
